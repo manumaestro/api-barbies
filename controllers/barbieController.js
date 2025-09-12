@@ -16,7 +16,7 @@ export const getBarbiesById = (req, res) => {
 };
 
 export const create = (req, res) => {
-    const { nome, profisao, anoLancamento } = req.body;
+    const { nome, profissao, anoLancamento } = req.body;
 
     if (!nome || !profissao || !anoLancamento) {
         return res.status(400).json({ message: "Todos os campos são obrigatórios" });
